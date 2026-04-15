@@ -50,19 +50,25 @@ A ideia é maximizar a separação entre classes e minimizar a dispersão dentro
 
 ### Dispersão intra-classe
 
+```math
 S_w = Σ Σ (x - μ_c)(x - μ_c)^T
+```
 
 ---
 
 ### Dispersão entre classes
 
+```math
 S_b = Σ n_c (μ_c - μ)(μ_c - μ)^T
+```
 
 ---
 
 ## Critério de escolha
 
+```math
 J = trace(S_w^{-1} S_b)
+```
 
 Quanto maior J → melhor separação
 
@@ -82,21 +88,29 @@ Todos avaliados com Leave-One-Out (LOOCV).
 
 ## k-NN (k-Nearest Neighbors)
 
+```math
 d(x, x_i) = sqrt(Σ (x_j - x_ij)^2)
+```
 
+```math
 ŷ = argmax_c Σ 1(y_i = c)
+```
 
 ---
 
 ## LDA (Linear Discriminant Analysis)
 
+```math
 g_c(x) = x^T Σ^{-1} μ_c - 1/2 μ_c^T Σ^{-1} μ_c + log P(c)
+```
 
 ---
 
 ## QDA (Quadratic Discriminant Analysis)
 
+```math
 g_c(x) = -1/2 log|Σ_c| - 1/2 (x - μ_c)^T Σ_c^{-1}(x - μ_c) + log P(c)
+```
 
 ---
 
