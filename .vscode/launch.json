@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "OctaveDebugger",
+      "request": "launch",
+      "name": "Octave",
+      "program": "${file}",
+      "octave": "\"C:\\Program Files\\GNU Octave\\Octave-11.1.0\\mingw64\\bin\\octave-gui.exe\"",
+      "sourceFolder": "${workspaceFolder}"
+    }
+  ]
+}
