@@ -5,8 +5,8 @@ addpath('data');
 
 
 
-% filePath = 'data/column_2c.dat';
 filePath = 'data/column_3c.dat';
+% filePath = 'data/column_3c.dat';
 % Carrega os dados
 feature_names = {'pelvic incidence', 'pelvic tilt', 'lumbar lordosis angle', 'sacral slope', 'pelvic radius', 'degree spondylolisthesis'};
 % class_names = {'AB', 'NO'};
@@ -14,8 +14,8 @@ class_names = {'DH', 'SL','NO'}
 [X, y, labels_text] = load_data(filePath,class_names,' ');
 
 
-use_normalization = true;        % true ou false
-normalization_method = 'zscore'; % 'zscore' ou ''
+use_normalization = true;        
+normalization_method = 'zscore';
 
 
 fprintf('Carregando base de dados...\n');
